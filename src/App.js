@@ -1,12 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
-import Main from './components/main'
+import Die from './components/die'
 
 function App() {
+
+  function allNewDice(){
+    
+    return(
+      <div>
+
+      </div>
+    )
+  }
+
   return (
-    <div className="App">
-      <Main/>
-    </div>
+      <main>
+        <div class="dice-container">
+            <Die value="1" />
+            <Die value="2" />
+            <Die value="3" />
+            <Die value="4" />
+            <Die value="5" />
+            <Die value="6" />
+            <Die value="7" />
+            <Die value="8" />
+            <Die value="9" />
+            <Die value="10" />
+        </div>
+      </main>
   );
 }
 
